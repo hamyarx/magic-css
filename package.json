@@ -1,0 +1,11 @@
+{
+  "name": "magic-css",
+  "version": "1.0.0",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "build": "node-sass src/scss/ -o dist/css/ -r --source-map-embed --source-map-contents --output-style expanded && node-sass src/scss/main.scss dist/css/main.min.css --output-style compressed",
+    "watch": "node-sass src/scss/ -o dist/css/ -w -r --source-map-embed --source-map-contents --output-style expanded"
+  }
+}
